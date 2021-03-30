@@ -17,3 +17,24 @@ gifts: [],
 clothing: [],
 grocery: []
 };
+
+let [grocery, cleaning, gifts, clothing] = [shoppingList[0], shoppingList[1], shoppingList[2], shoppingList[3]] ;
+
+shoppingList = [grocery, cleaning, gifts, clothing];
+
+let categories = Object.keys(obj);
+
+shoppingList.map((index) => {
+
+    for(i=0; i<categories.length; i++){
+        if(categories[i] == index.value){
+            obj.index.push(index);
+        }
+    }
+   
+    
+} 
+
+);
+
+console.log(obj.cleaning);

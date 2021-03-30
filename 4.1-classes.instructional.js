@@ -16,8 +16,24 @@
 //NOTE: Write your code below and push back to your github branch.  SUBMIT YOUR GITHUB URL IN CANVAS
 //* **************************************************
 
+
+class polygon{
+    constructor(sides){
+        this.sides = sides;
+    };
+    perimeter(sides){
+        function add(total, num) {
+            return total + num;
+        };
+        return sides.reduce(add);
+    };
+
+
+};
 // Create a polygon with side lengths 3, 3, 8, and 8
 
-
+let rectangle = new polygon([3,3,8,8]);
   
 // Print the perimeter
+
+console.log(rectangle);
