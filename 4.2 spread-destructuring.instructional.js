@@ -20,21 +20,27 @@ grocery: []
 
 let [grocery, cleaning, gifts, clothing] = [shoppingList[0], shoppingList[1], shoppingList[2], shoppingList[3]] ;
 
-shoppingList = [grocery, cleaning, gifts, clothing];
+//console.log(...shoppingList);
+
+//shoppingList = [grocery, cleaning, gifts, clothing];
+let newList = [...shoppingList];
+
+///console.log(newList);
 
 let categories = Object.keys(obj);
 
-shoppingList.map((index) => {
+//console.log(categories);
 
-    for(i=0; i<categories.length; i++){
-        if(categories[i] == index.value){
-            obj.index.push(index);
-        }
-    }
-   
-    
-} 
+//obj.cleaning.push('soap')
 
-);
+function index(item){
+    for(i=0; i<newList.length; i++){
+            if(item == newList[i]){
+                obj.item.push(newList[i])
+             }
+}};
+
+categories.map(index);
+
 
 console.log(obj.cleaning);
